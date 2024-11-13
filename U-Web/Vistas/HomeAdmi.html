@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Font Awesome Link..................-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Materialize Iconos -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!--CSS Link..................-->
+    <link rel="stylesheet" href="/Assets/Style.css">
+
+</head>
+<body>
+    <!--...............Navbar...................-->
+     <nav>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="/Assets/imagenes/LogoSF2.png" alt="">
+            </div>
+                <div class="search-bar">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="search" placeholder="Buscar">
+                </div>
+                <div class="add-post">
+                    <!-- <label for="add-post" class="btn btn-primary">Add Post</label> -->
+                    <div class="profile-picture" id="my-profile-picture">
+                        <img src="/Assets/imagenes/profile.jpg" alt="">
+                    </div>
+                </div>
+        </div>
+     </nav>
+
+    <!-- ...............Main...................-->
+     <main>
+        <div class="container main-container">
+            <!-- ...............Main Left...................-->
+             <div class="main-left">
+                 <!--Profile-->
+                <a href="" class="profile">
+                    <div class="profile-picture" id="my-profile-picture">
+                        <img src="/Assets/imagenes/profile.jpg" alt="">
+                    </div>
+                    <div class="profile-handle">
+                        <h4>Ingrid Aranda</h4>
+                        <p class="text-grey">
+                            @ingriid_aranda
+                        </p>
+                    </div>
+                </a>
+
+                <!--Aside Bar-->
+                <aside>
+                    <a href="" class="menu-item active">
+                       <span><img src="/Assets/svg/house-door.svg" alt=""></span>
+                       <h3>Inicio</h3>
+                    </a>
+
+                     <a href="" class="menu-item">
+                        <span><img src="/Assets/svg/bell.svg" alt=""></span>
+                        <small class="contador-notificaciones">7+</small>
+                        <h3>Notificaciones</h3>
+                        <!--Notificacion Box-->
+                        <div class="notificacion-box">
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="/Assets/imagenes/profileDef.jpg" alt="">
+                                </div>
+                                <div class="notificacion-body">
+                                    <b>Maria Aranda</b> acepto tu solicitud de amistad
+                                    <small class="text-grey"> Hace 1 dia </small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="/Assets/imagenes/profileDef.jpg" alt="">
+                                </div>
+                                <div class="notificacion-body">
+                                    <b>Ingrid Aranda</b> acepto tu solicitud de amistad
+                                    <small class="text-grey"> Hace 1 hora </small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="/Assets/imagenes/profileDef.jpg" alt="">
+                                </div>
+                                <div class="notificacion-body">
+                                    <b>Ilse Aranda</b> acepto tu solicitud de amistad
+                                    <small class="text-grey"> Hace 2 dias </small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="/Assets/imagenes/profileDef.jpg" alt="">
+                                </div>
+                                <div class="notificacion-body">
+                                    <b>Rogelio Aranda</b> acepto tu solicitud de amistad
+                                    <small class="text-grey"> Hace 4 horas </small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="/Assets/imagenes/profileDef.jpg" alt="">
+                                </div>
+                                <div class="notificacion-body">
+                                    <b>Efren Ortiz</b> acepto tu solicitud de amistad
+                                    <small class="text-grey"> Hace 1 dia </small>
+                                </div>
+                            </div>
+                        </div>
+                     </a>
+
+                    <a href="/Vistas/Perfil.html" class="menu-item">
+                        <span><img src="/Assets/svg/person.svg" alt=""></span>
+                        <h3>Perfil</h3>
+                     </a>
+
+                     <a href="" class="menu-item">
+                        <span><img src="/Assets/svg/palette.svg" alt=""></span>
+                        <h3>Tema</h3>
+                     </a>
+
+                     <!--Boton Cerrar Sesion-->
+                     <button class="btn btn-primary btn-lg" onclick="location.href='/Vistas/Login.html'">Cerrar Sesion</button>
+                </aside>
+             </div>
+
+             <!-- ...............Main Middle...................-->
+             <div class="main-middle">
+                <div class="middle-container">
+                    <form class="add-post">
+                        <div class="profile-picture" id="my-profile-picture">
+                            <img src="/Assets/imagenes/profile.jpg" alt="">
+                        </div>
+                        <input type="text" placeholder="Escribe sin limites!! " id="add-post">
+                        <input type="submit" value="Publicar" class="btn btn-primary">
+                  </form>
+
+                  <div class="feeds">
+                    <div class="feed">
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture" id="my-profile-picture">
+                                    <img src="/Assets/imagenes/profile.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Ingrid Aranda</h3>
+                                    <div class="time text-grey">
+                                        <small>MEXICO, <span>2 DAYS AGO</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <img src="/Assets/svg/three-dots.svg" alt="">
+
+                                <ul class="edit-menu">
+                                    <li><i class="fa fa-pen"></i>Edit</li>
+                                    <li><i class="fa fa-trash"></i>Delete</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Imagen de la publicacion -->
+                         <div class="feed-img">
+                            <img src="/Assets/imagenes/img.jpg" alt="">
+                         </div>
+                         <!-- Acciones -->
+                          <div class="action-button">
+                            <div class="interaction-button">
+                                <span> <i class="fa fa-heart"></i> </span>
+                                <span> <i class="fa fa-comment-dots"></i> </span>
+                                <span> <i class="fa fa-link"></i> </span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                          </div>
+
+                        <!-- Reacciones -->
+                         <div class="liked-by">
+                            <span><img src="/Assets/imagenes/profileDef.jpg" alt=""></span>
+                            <span><img src="/Assets/imagenes/profileDef.jpg" alt=""></span>
+                            <span><img src="/Assets/imagenes/profileDef.jpg" alt=""></span>
+                            <p>Liked by <b>Jose Hernandez</b> and <b>77 comments other</b></p>
+                         </div>
+
+                         <!-- Caption -->
+                          <div class="caption">
+                            <p><b>Lana White </b>Lorem ipsum dolor sit amet, consectetur adipisicing. 
+                            <span class="hars-tag">#lifestyle</span></p>
+                          </div>
+
+                         <!-- Comentarios -->
+                          <div class="comments text-grey">
+                            View all comments
+                          </div>
+                    </div>
+                    <div class="feed">
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="/Assets/imagenes/profileDef2.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Ilse Aranda</h3>
+                                    <div class="time text-grey">
+                                        <small>PAKISTAN, <span>2 DAYS AGO</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <img src="/Assets/svg/three-dots.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- Imagen de la publicacion -->
+                         <div class="feed-img">
+                            <h2>Hello World!!!, I'm Ilse Aranda from Mexico</h2>
+                         </div>
+                         <!-- Acciones -->
+                          <div class="action-button">
+                            <div class="interaction-button">
+                                <span> <i class="fa fa-heart"></i> </span>
+                                <span> <i class="fa fa-comment-dots"></i> </span>
+                                <span> <i class="fa fa-link"></i> </span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                          </div>
+
+                        <!-- Reacciones -->
+                         <div class="liked-by">
+                            <span><img src="/Assets/imagenes/profileDef.jpg" alt=""></span>
+                            <span><img src="/Assets/imagenes/profileDef.jpg" alt=""></span>
+                            <span><img src="/Assets/imagenes/profileDef.jpg" alt=""></span>
+                            <p>Liked by <b>Jose Hernandez</b> and <b>77 comments other</b></p>
+                         </div>
+
+                         <!-- Caption -->
+                          <div class="caption">
+                            <p><b>Lana White </b>Lorem ipsum dolor sit amet, consectetur adipisicing. 
+                            <span class="hars-tag">#lifestyle</span></p>
+                          </div>
+
+                         <!-- Comentarios -->
+                          <div class="comments text-grey">
+                            View all comments
+                          </div>
+                    </div>
+                    <div class="feed">
+                        <div class="feed-top">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="/Assets/imagenes/profileDef2.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>Ilse Aranda</h3>
+                                    <div class="time text-grey">
+                                        <small>PAKISTAN, <span>2 DAYS AGO</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit">
+                                <img src="/Assets/svg/three-dots.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- Imagen de la publicacion -->
+                         <div class="feed-img">
+                            <img src="/Assets/imagenes/img.jpg" alt="">
+                         </div>
+                         <!-- Acciones -->
+                          <div class="action-button">
+                            <div class="interaction-button">
+                                <span> <i class="fa fa-heart"></i> </span>
+                                <span> <i class="fa fa-comment-dots"></i> </span>
+                                <span> <i class="fa fa-link"></i> </span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa fa-bookmark"></i>
+                            </div>
+                          </div>
+
+                        <!-- Reacciones -->
+                         <div class="liked-by">
+                            <span><img src="/Assets/imagenes/profileDef.jpg" alt=""></span>
+                            <span><img src="/Assets/imagenes/profileDef.jpg" alt=""></span>
+                            <span><img src="/Assets/imagenes/profileDef.jpg" alt=""></span>
+                            <p>Liked by <b>Jose Hernandez</b> and <b>77 comments other</b></p>
+                         </div>
+
+                         <!-- Caption -->
+                          <div class="caption">
+                            <p><b>Efren Ortiz </b>Lorem ipsum dolor sit amet, consectetur adipisicing. 
+                            <span class="hars-tag"></span></p>
+                          </div>
+
+                         <!-- Comentarios -->
+                          <div class="comments text-grey">
+                            View all comments
+                          </div>
+                    </div>
+                  </div>
+                </div>
+             </div>
+
+             <!-- ...............Main Right...................-->
+             <div class="main-right">
+                
+             </div>
+
+        </div>
+     </main>
+     <!-- ...............PopUps...................-->
+       <!-- ProfilePopUp -->
+        <div class="popup profile-popup">
+            <div>
+                <div class="popup-box profile-popup-box">
+                    <h1>Ingrid Aranda</h1>
+                    <p>@ingriid_aranda</p>
+                    <div id="my-profile-picture">
+                        <img src="/Assets/imagenes/profile.jpg" alt="">
+                    </div>
+                    <label for="profile-upload" class="btn btn-primary btn-lg">Update Profile Picture</label>
+                    <input type="file" accept="image/jpg, image/png, image/jpeg" id="profile-upload">
+                    <button class="btn btn-primary btn-lg">Log Out</button>
+                </div>
+                <span class="close"><i class="fa fa-close"></i></span>
+            </div>
+        </div>
+
+        <!-- JS Script -->
+         <script src="/Assets/Script.js"></script>
+</body>
+</html>
